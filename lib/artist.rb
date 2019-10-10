@@ -7,8 +7,8 @@ class Artist
   end
 
   def add_song(song)
-    if song.new
-      song.artist 
+    @@songs << song
+    song.artist = self
   end
 
 end
